@@ -1,0 +1,663 @@
+﻿:root {
+    --color-primary: #163f6b;
+    --color-secondary: #a0a6ac;
+    --color-success: #58c76b;
+    --color-danger: #f0506b;
+    --color-warning: #eda92c;
+    --color-info: #4cc0d2;
+    --color-light: #e7ebf0;
+    --color-dark: #5b6068;
+
+    --color-base: #404041;
+
+    --color-gray: #929497;
+    --color-gray-light: #58595b;
+    --color-gray-lighter: #898a8d;
+    --color-gray-lightest: #f3f5f7;
+    --color-gray-dark: #404041;
+    
+    --color-blue-light: #ecf3f9;
+
+    --color-card-bg: #f1f1f2;
+    --card-border-color-base: #bbb;
+    --color-t63-card-bg: #f3f5f7;
+    --color-section-striped: #f3f5f7;
+
+    --color-title: #1e4d39;
+    --color-link: #4679cc;
+    --color-tooltip: #ed2224;
+    --color-emphasis: #909090;
+    --color-text-selection: #fff2a8;
+
+    --color-form-label: #929497;
+    --color-form-control: #404040;
+    --color-form-control-bg: #fff;
+    --color-form-control-border: #e2e2e2;
+    --color-input-checked: #163f6b;
+    --color-form-link: #2776bd;
+
+    --color-form-error: #B61D22;
+    --color-form-error-bg: #fff;
+    --color-form-error-border: #f3ced3;
+
+    --color-close-btn-bg: #7f7f6f;
+
+    --color-badge-primary-bg: #275eb5;
+    --color-badge-primary-text: #d2bf8b;
+    --color-badge-primary-light-bg: #B3D8FD;
+    --color-badge-primary-light-text: #002950;
+
+    --color-badge-secondary-bg: #a0a6ac;
+    --color-badge-secondary-text: #fff;
+    --color-badge-secondary-light-bg: #D9D9D9;
+    --color-badge-secondary-light-text: #2C2C2C;
+
+    --color-badge-success-bg: #009345;
+    --color-badge-success-text: #fff;
+    --color-badge-success-light-bg: #BDE5CB;
+    --color-badge-success-light-text: #003613;
+
+    --color-badge-danger-bg: #ec1c24;
+    --color-badge-danger-text: #fff;
+    --color-badge-danger-light-bg: #F6BFC7;
+    --color-badge-danger-light-text: #48040E;
+
+    --color-badge-warning-bg: #d4bf8c;
+    --color-badge-warning-text: #163f6b;
+    --color-badge-warning-light-bg: #FFECC3;
+    --color-badge-warning-light-text: #422D02;
+
+    --color-badge-info-bg: #4cc0d2;
+    --color-badge-info-text: #fff;
+    --color-badge-info-light-bg: #B3E4E9;
+    --color-badge-info-light-text: #014047;
+
+    --color-badge-light-bg: #dbdfe4;
+    --color-badge-light-text: #163f6b;
+
+    --color-badge-dark-bg: #6d6e70;
+    --color-badge-dark-text: #fff;
+    --color-badge-dark-light-bg: #B5C6D2;
+    --color-badge-dark-light-text: #052F4E;
+
+    --color-badge-purple-bg: #b6259e;
+    --color-badge-purple-text: #fff;
+
+    --icon-wrap-circle-bg: var(--color-primary);
+    --icon-wrap-circle-border-color: #b0bfc7;
+    --icon-wrap-circle-border-radius: 50%;
+    --icon-wrap-circle-text-color: #fff;
+
+    --border-radius: 16px;
+}
+
+
+
+
+/* ----------- fonts ----------- */
+body, input, textarea, button{
+    font-family: 'Avenir LT', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.title,
+.text-emphasis,
+.learning-overview-item .num{
+    font-family: 'PT Serif', serif;
+}
+
+/*.app-header .sign-wrap a,
+.app-header .user-wrap a,
+.app-header .user-wrap button,
+.app-header nav a,
+.app-header nav button,
+.app-header .search-wrap > div input,*/
+.testimonial-title,
+.page-account .page-head .user-container .name,
+.notebook-course-sections-list .item .title{
+    font-family: 'Avenir LT', sans-serif;
+}
+/* ----------- /fonts ----------- */
+
+
+
+
+/* ==================== layout ==================== */
+
+
+/* ---------- header ---------- */
+.app-header-wrap {
+    background-color: #fff;
+    box-shadow: 0 7px 10px 0 rgba(32, 39, 80, 0.12);
+}
+
+.app-header-wrap .logo img {
+    height: 45px;
+}
+
+@media (min-width: 992px) {
+    .app-header-wrap .logo img {
+        height: 64px;
+    }
+
+    .app-header .sign-wrap a,
+    .app-header .user-wrap a,
+    .app-header .user-wrap button {
+        color: var(--color-gray-light);
+    }
+
+    .app-header .user-wrap > button svg path {
+        fill: var(--color-gray-light);
+    }
+
+    .app-header .user-wrap a:hover,
+    .app-header .user-wrap button:hover {
+        color: var(--color-primary);
+    }
+
+    .app-header .user-wrap > button:hover svg path {
+        fill: var(--color-primary);
+    }
+}
+
+.app-header nav a,
+.app-header nav button {
+    color: #000;
+}
+.app-header nav li li a {
+    color: #6d6e70;
+}
+.app-header nav a:hover,
+.app-header nav a.active,
+.app-header nav button:hover {
+    color: var(--color-primary);
+}
+
+.basket-btn > span span {
+    background-color: #f15a25;
+    color: #fff;
+}
+
+.app-header .search-wrap > div input {
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    color: #000;
+}
+
+.app-header .search-wrap > div input:focus {
+    border-color: var(--color-primary);
+}
+
+@media (max-width: 1359px) {
+    .app-header nav {
+        background-color: rgba(255,255,255,0.95);
+    }
+    .app-header nav .sign-wrap,
+    .app-header nav .user-wrap {
+        border-bottom-color: var(--color-primary);
+    }
+}
+
+/*@media (min-width: 1200px) {
+    .app-header nav {
+        margin-left: 50px;
+    }
+
+    .app-header nav > ul {
+        margin: 0 -22px;
+    }
+
+    .app-header nav > ul > li {
+        padding: 0 22px;
+    }
+}*/
+/* ---------- /header ---------- */
+
+
+/* ---------- breadcrumbs ---------- */
+.breadcrumbs li {
+    color: #808080;
+}
+.breadcrumbs li a {
+    color: #4d5c61;
+}
+/* ---------- /breadcrumbs ---------- */
+
+
+/* ---------- page ---------- */
+.page-head,
+.app-page .t63-page-head:first-child,
+.section-striped .section:nth-child(even){
+    background-color: var(--color-section-striped);
+}
+.page-content-head {
+    color: var(--color-gray-light);
+}
+/* ---------- /page ---------- */
+
+
+/* ---------- footer ---------- */
+.app-footer {
+    background-color: #13181c;
+    color: #fff;
+}
+
+.app-footer .logo {
+    max-width: 150px;
+}
+.app-footer .logo img{
+    width: 150px;
+}
+
+.app-footer .links-wrap-title {
+    color: #fff;
+}
+/* ---------- /footer ---------- */
+
+
+
+/* ==================== components ==================== */
+
+
+/* ---------- buttons ---------- */
+
+/* primary */
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+}
+
+/* secondary */
+.btn-secondary,
+.btn-secondary:focus,
+.btn-secondary:hover,
+.btn-secondary:not(:disabled):not(.disabled):active {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: #fff;
+}
+
+/* success */
+.btn-success,
+.btn-success:focus,
+.btn-success:hover,
+.btn-success:not(:disabled):not(.disabled):active {
+    background-color: var(--color-success);
+    border-color: var(--color-success);
+    color: #fff;
+}
+
+/* danger */
+.btn-danger,
+.btn-danger:focus,
+.btn-danger:hover,
+.btn-danger:not(:disabled):not(.disabled):active {
+    background-color: var(--color-danger);
+    border-color: var(--color-danger);
+    color: #fff;
+}
+
+/* warning */
+.btn-warning,
+.btn-warning:focus,
+.btn-warning:hover,
+.btn-warning:not(:disabled):not(.disabled):active {
+    background-color: var(--color-warning);
+    border-color: var(--color-warning);
+    color: #173c6b;
+}
+
+/* info */
+.btn-info,
+.btn-info:focus,
+.btn-info:hover,
+.btn-info:not(:disabled):not(.disabled):active {
+    background-color: var(--color-info);
+    border-color: var(--color-info);
+    color: #fff;
+}
+
+/* light */
+.btn-light,
+.btn-light:focus,
+.btn-light:hover,
+.btn-light:not(:disabled):not(.disabled):active {
+    background-color: var(--color-light);
+    border-color: var(--color-light);
+    color: #163f6b;
+}
+
+/* dark */
+.btn-dark,
+.btn-dark:focus,
+.btn-dark:hover,
+.btn-dark:not(:disabled):not(.disabled):active {
+    background-color: var(--color-dark);
+    border-color: var(--color-dark);
+    color: #fff;
+}
+/* ---------- /buttons ---------- */
+
+
+/* ---------- card ---------- */
+.card {
+    background-color: var(--color-card-bg);
+}
+.card-section {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-bg-light{
+    background-color: var(--color-t63-card-bg);
+}
+.card-bg-light .card-header{
+    background-color: transparent;
+}
+/* ---------- /card ---------- */
+
+
+/* ---------- text-with-img ---------- */
+.item-text-with-img .embed-responsive::before {
+    background: linear-gradient(to top, rgba(22,63,107,0.8) 0%,rgba(22,63,107,0) 100%);
+}
+/* ---------- /text-with-img ---------- */
+
+
+/* ---------- Pricing toggler ---------- */
+.pricing-toggler {
+    border-color: #e5ebf1;
+    background-color: var(--color-card-bg);
+}
+.pricing-toggler .bg-wrap {
+    background-color: #293a4b;
+}
+.pricing-toggler .text-1.active,
+.pricing-toggler .text-2.active {
+    color: #fff;
+}
+.pricing-toggler-wrap p{
+    color: #1B6B44;
+}
+/* ---------- /Pricing toggler ---------- */
+
+
+/* ---------- box badge ---------- */
+.box-badge {
+    color: #FFF;
+    background: #13406b;
+    background: linear-gradient(#5A93CC 0%, #13406b 100%);
+    box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 1);
+}
+
+.box-badge-green{
+    background: #79A70A;
+    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+}
+
+.box-badge-red{
+    background: #A90329;
+    background: linear-gradient(#A90329 0%, #6D0019 100%);
+}
+/* ---------- /box badge ---------- */
+
+
+
+/* ==================== 5. content by pages ==================== */
+
+.testimonial-item,
+.catalog-section > .head,
+.page-cart .basket-container tbody td,
+.credit-cards-container tbody td{
+    background-color: var(--color-section-striped);
+}
+
+.catalog-item-features-list li .icon {
+    background-color: var(--color-primary);
+}
+
+
+/* ---------- course ---------- */
+.chapter .head {
+    background-color: var(--color-primary);
+}
+.chapter .head .title {
+    color: #fff;
+}
+
+.chapter .body li {
+    background-color: #f1f1f2;
+    border-top-color: #d4d4d4;
+    border-right-color: #d4d4d4;
+}
+
+.chapter .body li::before {
+    background-color: #ddd;
+    color: #666;
+}
+
+.chapter .body li .progress-wrap::before {
+    background-color: #d4d4d4;
+}
+
+.chapter .body li .progress-wrap i {
+    background-color: #d4d4d4;
+    border-color: #d4d4d4;
+    color: #fff;
+}
+
+.chapter .body li.active .progress-wrap::before,
+.chapter .body li.active .progress-wrap i {
+    background-color: #37abf2;
+}
+
+.chapter .body li.active .progress-wrap i {
+    border-color: #37abf2;
+}
+
+.chapter .body li:hover {
+    background-color: #fff;
+    border-top-color: #eee;
+}
+
+.chapter .body li:hover + li {
+    border-top-color: #eee;
+}
+
+.chapter .body li.current:before,
+.chapter .body li:hover::before {
+    background-color: #37abf2;
+    color: #fff;
+}
+
+.chapter .body li:not(.active):hover .progress-wrap i {
+    background-color: #fff;
+}
+/* ---------- /course ---------- */
+
+
+
+/* ==================== t63 components ==================== */
+
+
+/* ----------- t63 icons ----------- */
+.has-circled-icon .t63-icon-wrap{
+    background-color: var(--color-primary);
+    border-color: #b0bfc7;
+}
+.has-circled-icon  .t63-icon-wrap i{
+    color: #fff;
+}
+/* ----------- /t63 icons ----------- */
+
+
+/* ---------- scrollTo nav section ---------- */
+.t63-scrollto-nav ul{
+    background-color: var(--color-card-bg) !important;
+}
+.t63-scrollto-nav a{
+    color: #666;
+}
+/* ---------- /scrollTo nav section ---------- */
+
+
+/* ---------- img & slider sections ---------- */
+.t63-section.img-section .bg-img::before,
+.t63-section.slider-section .bg-img::before{
+    background: url(/plugins/63bits-pageBuilder/images/intro_slide_gradient.png) bottom repeat-x;
+}
+
+.slider-section .slick-slider .slick-dots button{
+    background-color: #c1c3c6;
+    border-color: #c1c3c6;
+}
+.slider-section .t63-multimedia-container .embed-responsive::after {
+    background: url(/plugins/63bits-pageBuilder/images/intro_slide_gradient.png) bottom repeat-x;
+}
+/* ---------- /img & slider sections ---------- */
+
+
+/* ---------- images grid ---------- */
+.t63-img-grid-section .grid-item .bg-img::before{
+    background: url(/plugins/63bits-pageBuilder/images/grid_item_overlay_bg.png) bottom repeat-x;
+}
+.t63-img-grid-section .grid-item-title,
+.t63-section .grid-item-text{
+    color: #fff;
+}
+.t63-img-grid-section .grid-item .overlay{
+    background-color: rgba(61,0,180,0.6);
+}
+/* ---------- /images grid ---------- */
+
+
+/* ---------- accordion ---------- */
+.t63-section .accordion-item{
+    background-color: var(--color-t63-card-bg);
+}
+.t63-section .accordion-item-head::after{
+    background-image: url("/images/icons/chevron_blue.svg");
+}
+.t63-section .accordion-item-head .t63-icon-wrap i,
+.t63-section .accordion-item-head .title{
+    color: var(--color-primary);
+}
+/* ---------- /accordion ---------- */
+
+
+/* ----------- testimonials section ----------- */
+.t63-testimonial-item .author-wrap .text,
+.t63-testimonial-item .author-wrap .plain-text-input{
+    color: #231f20;
+}
+.t63-testimonial-item .description-wrap .text,
+.t63-testimonial-item .description-wrap .plain-text-input{
+    color: #414042;
+}
+/* ----------- /testimonials section ----------- */
+
+
+/* ----------- services section ----------- */
+.t63-services-section .grid-item{
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+}
+.t63-services-section .grid-item .img-container{
+    background-color: #f9f8fb;
+}
+.t63-services-section .grid-item .content .text,
+.t63-services-section .grid-item .content .plain-text-input{
+    color: var(--color-gray-light);
+}
+/* ----------- /services section ----------- */
+
+
+/* ----------- card ----------- */
+.t63-card-section article{
+    background-color: var(--color-t63-card-bg);
+}
+/* ----------- /card ----------- */
+
+
+/* ----------- flip card ----------- */
+.t63-flip-cards-section .flip-card-item .flip-front {
+    background-color: var(--color-t63-card-bg);
+}
+
+.t63-flip-cards-section .flip-card-item .flip-back {
+    background-color: var(--color-primary);
+}
+.t63-flip-cards-section .flip-card-item .title{
+    color: #4d5c61;
+}
+.t63-flip-cards-section .flip-card-item [data-media-type="image"] + .title-container .title,
+.t63-flip-cards-section .flip-card-item [data-media-type="image"] + .title-container .title *,
+.t63-flip-cards-section .flip-card-item .text-wrap{
+    color: #fff;
+}
+.flip-card-item[data-clickable="true"] .flip-front::before{
+    background-image: url(/plugins/63bits-pageBuilder/images/icons/rotate.svg);
+    background-color: #ebebeb;
+    border-color: #cbcbcb;
+}
+/* ----------- /flip card ----------- */
+
+
+/* ----------- packages ----------- */
+.t63-packages-grid-section .packages-grid-item{
+    background-color: var(--color-t63-card-bg);
+}
+.t63-packages-grid-section .packages-grid-item .title,
+.t63-packages-grid-section .packages-grid-item .text-wrap{
+    color: var(--color-gray-light);
+}
+/* ----------- /packages ----------- */
+
+
+/* ----------- quote ----------- */
+.t63-quote-section article{
+    background-color: var(--color-t63-card-bg);
+}
+.t63-quote-section .fontawesome-icon-container .t63-icon-wrap i{
+    color: var(--color-primary);
+}
+
+.t63-quote-section .text-wrap{
+    color: var(--color-gray-light);
+}
+/* ----------- /quote ----------- */
+
+
+/* ----------- evocalendar ----------- */
+.t63-section .calendar-sidebar,
+.t63-section #eventListToggler,
+.t63-section .calendar-sidebar>span#sidebarToggler{
+    background-color: var(--color-primary);
+    -webkit-box-shadow: 5px 0 18px -3px var(--color-primary);
+    box-shadow: 5px 0 18px -3px var(--color-primary);
+}
+
+.t63-section .calendar-sidebar>.month-list>.calendar-months>li:hover{
+    background-color: #163557;
+}
+.t63-section .calendar-sidebar>.month-list>.calendar-months>li.active-month {
+    background-color: #112b47;
+}
+
+.t63-section th[colspan="7"]{
+    color: var(--color-primary);
+}
+.t63-section th[colspan="7"]::after{
+    background-color: rgba(22,63,107,.25);
+}
+.t63-section .event-list>.event-empty{
+    background-color: rgba(22,63,107,.25);
+    border-color: var(--color-primary);
+}
+.t63-section .event-list>.event-empty>p{
+    color: var(--color-primary);
+}
+/* ----------- /evocalendar ----------- */

@@ -1,0 +1,698 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png" />
+    <title>Tamarind Learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="plugins/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="plugins/jquery-confirm/jquery-confirm.min.css" rel="stylesheet" />
+    <link href="plugins/fancybox/jquery.fancybox.css" rel="stylesheet" />
+    <link href="plugins/fancybox/style.css" rel="stylesheet" />
+    <link href="plugins/63bits-pageBuilder/css/template63.css" rel="stylesheet" />
+    <link href="plugins/slick/slick.min.css" rel="stylesheet" />
+    <link href="plugins/splide/css/splide.min.css" rel="stylesheet" />
+    <link href="plugins/malihu-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/BootstrapUtilities.css">
+    <link rel="stylesheet" type="text/css" href="css/themes/theme.css">
+
+    <script src="plugins/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="app js-app">
+        <header class="app-header js-app-header ">
+            <div class="container">
+                <div class="app-header-wrap">
+                    <a class="logo"><img src="images/logo.svg" alt="logo" /></a>
+                    <nav class="js-app-nav">
+                        <ul>
+                            <li>
+                                <a href="#" rel="nofollow">Education</a>
+                            </li>
+                            <li>
+                                <a href="#" rel="nofollow">About</a>
+                            </li>
+                            <li>
+                                <a href="#" rel="nofollow">Contact Us </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="ml-auto">
+                        <div class="row row-xs">
+                            <div class="col-auto">
+                                <a class="btn btn-primary dashboard-btn" href="#">
+                                    <span>
+                                        dashboard
+                                    </span>
+                                    <i class="far fa-tachometer"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto hamburger-col">
+                                <button class="btn btn-light hamburger js-app-hamburger">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <main class="app-page t63-page">
+            <section class="t63-section js-page-section" data-section="markupWrapper" data-type="1" data-id="9e54-b664" data-isscrolltonavitem="false" data-display-name="Markup" data-index="0">
+                <div class="js-section--container" data-container="text">
+                    <div class="js-plain-html-wrap">
+
+                    <section id="tl-pricing" class="tl-pricing">
+                        <style>
+                            #tl-pricing {
+                                --tl-primary: var(--color-primary, #163f6b);
+                                --tl-primary-dark: #0f2c4c;
+                                --tl-accent: var(--color-title, #1e4d39);
+                                --tl-text: var(--color-base, #404041);
+                                --tl-muted: var(--color-gray-light, #58595b);
+                                --tl-border: var(--color-form-control-border, #e2e2e2);
+                                --tl-bg-soft: var(--color-gray-lightest, #f3f5f7);
+                                --tl-white: #fff;
+                                max-width: 1200px;
+                                margin: 0 auto;
+                                padding: 56px 20px 80px;
+                                color: var(--tl-text);
+                                font-family: 'Avenir LT', sans-serif;
+                            }
+
+                            #tl-pricing * {
+                                box-sizing: border-box;
+                            }
+
+                            #tl-pricing .tl-pricing-header {
+                                text-align: center;
+                                max-width: 720px;
+                                margin: 0 auto 40px;
+                            }
+
+                            #tl-pricing .tl-pricing-eyebrow {
+                                display: inline-block;
+                                font-size: 13px;
+                                font-weight: 700;
+                                letter-spacing: 0.08em;
+                                text-transform: uppercase;
+                                color: var(--tl-primary);
+                                background-color: var(--tl-bg-soft);
+                                border-radius: 999px;
+                                padding: 6px 16px;
+                                margin-bottom: 16px;
+                            }
+
+                            #tl-pricing h1 {
+                                font-family: 'PT Serif', serif;
+                                color: var(--tl-accent);
+                                font-size: 38px;
+                                margin: 0 0 14px;
+                            }
+
+                            #tl-pricing .tl-pricing-header p {
+                                font-size: 16px;
+                                line-height: 1.6;
+                                color: var(--tl-muted);
+                                margin: 0 0 28px;
+                            }
+
+                            /* ---- billing toggle ---- */
+                            #tl-pricing .tl-pricing-toggle {
+                                display: inline-flex;
+                                align-items: center;
+                                background-color: var(--tl-bg-soft);
+                                border: 1px solid var(--tl-border);
+                                border-radius: 999px;
+                                padding: 4px;
+                                gap: 4px;
+                            }
+
+                            #tl-pricing .tl-pricing-toggle-btn {
+                                border: 0;
+                                background: transparent;
+                                padding: 10px 22px;
+                                border-radius: 999px;
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: var(--tl-muted);
+                                cursor: pointer;
+                                transition: background-color .15s ease, color .15s ease;
+                                white-space: nowrap;
+                            }
+
+                            #tl-pricing .tl-pricing-toggle-btn.active {
+                                background-color: var(--tl-primary);
+                                color: #fff;
+                            }
+
+                            #tl-pricing .tl-pricing-toggle-btn .tl-pricing-toggle-tag {
+                                display: inline-block;
+                                margin-left: 8px;
+                                font-size: 11px;
+                                font-weight: 700;
+                                background-color: rgba(255,255,255,0.2);
+                                border-radius: 999px;
+                                padding: 2px 8px;
+                            }
+
+                            #tl-pricing .tl-pricing-toggle-btn:not(.active) .tl-pricing-toggle-tag {
+                                background-color: var(--tl-accent);
+                                color: #fff;
+                            }
+
+                            /* ---- grid ---- */
+                            #tl-pricing .tl-pricing-grid {
+                                display: grid;
+                                grid-template-columns: repeat(3, 1fr);
+                                gap: 24px;
+                                align-items: stretch;
+                            }
+
+                            @media (max-width: 992px) {
+                                #tl-pricing .tl-pricing-grid {
+                                    grid-template-columns: 1fr;
+                                    max-width: 520px;
+                                    margin: 0 auto;
+                                }
+                            }
+
+                            #tl-pricing .tl-pricing-card {
+                                position: relative;
+                                display: flex;
+                                flex-direction: column;
+                                background-color: var(--tl-white);
+                                border: 1px solid var(--tl-border);
+                                border-radius: 16px;
+                                padding: 32px 28px;
+                                box-shadow: 0 4px 18px rgba(22, 63, 107, 0.06);
+                            }
+
+                            #tl-pricing .tl-pricing-card-featured {
+                                border-color: var(--tl-primary);
+                                box-shadow: 0 12px 30px rgba(22, 63, 107, 0.18);
+                                transform: translateY(-6px);
+                            }
+
+                            @media (max-width: 992px) {
+                                #tl-pricing .tl-pricing-card-featured {
+                                    transform: none;
+                                }
+                            }
+
+                            #tl-pricing .tl-pricing-badge {
+                                position: absolute;
+                                top: -14px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                background-color: var(--tl-primary);
+                                color: #fff;
+                                font-size: 12px;
+                                font-weight: 700;
+                                letter-spacing: 0.04em;
+                                text-transform: uppercase;
+                                padding: 6px 16px;
+                                border-radius: 999px;
+                                white-space: nowrap;
+                                box-shadow: 0 4px 10px rgba(22, 63, 107, 0.3);
+                            }
+
+                            #tl-pricing .tl-pricing-card-head h2 {
+                                font-family: 'PT Serif', serif;
+                                color: var(--tl-accent);
+                                font-size: 24px;
+                                margin: 0 0 4px;
+                            }
+
+                            #tl-pricing .tl-pricing-participants {
+                                display: inline-block;
+                                font-size: 12px;
+                                font-weight: 700;
+                                letter-spacing: 0.04em;
+                                text-transform: uppercase;
+                                color: var(--tl-primary);
+                                background-color: var(--tl-bg-soft);
+                                border-radius: 999px;
+                                padding: 4px 12px;
+                                margin-bottom: 12px;
+                            }
+
+                            #tl-pricing .tl-pricing-desc {
+                                font-size: 14px;
+                                line-height: 1.55;
+                                color: var(--tl-muted);
+                                margin: 0 0 22px;
+                                min-height: 62px;
+                            }
+
+                            #tl-pricing .tl-pricing-price {
+                                display: flex;
+                                align-items: baseline;
+                                gap: 6px;
+                                border-top: 1px solid var(--tl-border);
+                                padding-top: 20px;
+                            }
+
+                            #tl-pricing .tl-pricing-amount {
+                                font-family: 'PT Serif', serif;
+                                font-size: 36px;
+                                font-weight: 700;
+                                color: var(--tl-text);
+                            }
+
+                            #tl-pricing .tl-pricing-period {
+                                font-size: 14px;
+                                color: var(--tl-muted);
+                            }
+
+                            #tl-pricing .tl-pricing-save {
+                                display: none;
+                                align-items: center;
+                                gap: 6px;
+                                font-size: 12px;
+                                font-weight: 700;
+                                color: #1B6B44;
+                                margin-top: 8px;
+                            }
+
+                            #tl-pricing .tl-pricing-save.tl-pricing-save-visible {
+                                display: inline-flex;
+                            }
+
+                            #tl-pricing .tl-pricing-cta {
+                                display: block;
+                                text-align: center;
+                                margin: 20px 0 24px;
+                                padding: 12px 20px;
+                                border-radius: 8px;
+                                font-weight: 700;
+                                font-size: 15px;
+                                text-decoration: none;
+                                background-color: var(--tl-primary);
+                                color: #fff;
+                                border: 1px solid var(--tl-primary);
+                                transition: background-color .15s ease, color .15s ease;
+                            }
+
+                            #tl-pricing .tl-pricing-cta:hover {
+                                background-color: var(--tl-primary-dark);
+                                border-color: var(--tl-primary-dark);
+                                color: #fff;
+                            }
+
+                            #tl-pricing .tl-pricing-card:not(.tl-pricing-card-featured) .tl-pricing-cta {
+                                background-color: #fff;
+                                color: var(--tl-primary);
+                            }
+
+                            #tl-pricing .tl-pricing-card:not(.tl-pricing-card-featured) .tl-pricing-cta:hover {
+                                background-color: var(--tl-primary);
+                                color: #fff;
+                            }
+
+                            #tl-pricing .tl-pricing-section h3 {
+                                font-size: 12px;
+                                font-weight: 700;
+                                letter-spacing: 0.06em;
+                                text-transform: uppercase;
+                                color: var(--tl-muted);
+                                margin: 0 0 12px;
+                            }
+
+                            #tl-pricing .tl-pricing-list {
+                                list-style: none;
+                                margin: 0 0 8px;
+                                padding: 0;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                            }
+
+                            #tl-pricing .tl-pricing-list li {
+                                display: flex;
+                                align-items: flex-start;
+                                gap: 10px;
+                                font-size: 14px;
+                                line-height: 1.5;
+                            }
+
+                            #tl-pricing .tl-pricing-list li i {
+                                color: var(--tl-primary);
+                                margin-top: 3px;
+                                font-size: 13px;
+                                flex: 0 0 auto;
+                            }
+
+                            /* ---- expandable detail sections ---- */
+                            #tl-pricing .tl-pricing-details-group {
+                                margin-top: 20px;
+                                border-top: 1px solid var(--tl-border);
+                                padding-top: 8px;
+                            }
+
+                            #tl-pricing details.tl-pricing-details {
+                                border-bottom: 1px solid var(--tl-border);
+                            }
+
+                            #tl-pricing details.tl-pricing-details summary {
+                                list-style: none;
+                                cursor: pointer;
+                                padding: 14px 4px;
+                                font-size: 14px;
+                                font-weight: 700;
+                                color: var(--tl-text);
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+
+                            #tl-pricing details.tl-pricing-details summary::-webkit-details-marker {
+                                display: none;
+                            }
+
+                            #tl-pricing details.tl-pricing-details summary::after {
+                                content: "\f078";
+                                font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
+                                font-weight: 900;
+                                font-size: 11px;
+                                color: var(--tl-primary);
+                                transition: transform .15s ease;
+                                flex: 0 0 auto;
+                                margin-left: 12px;
+                            }
+
+                            #tl-pricing details.tl-pricing-details[open] summary::after {
+                                transform: rotate(180deg);
+                            }
+
+                            #tl-pricing details.tl-pricing-details .tl-pricing-list {
+                                padding-bottom: 16px;
+                            }
+
+                            #tl-pricing .tl-pricing-optional {
+                                margin-top: 20px;
+                                background-color: var(--tl-bg-soft);
+                                border: 1px dashed var(--tl-primary);
+                                border-radius: 10px;
+                                padding: 14px 16px;
+                                display: flex;
+                                align-items: flex-start;
+                                gap: 10px;
+                                font-size: 13px;
+                                line-height: 1.5;
+                            }
+
+                            #tl-pricing .tl-pricing-optional i {
+                                color: var(--tl-primary);
+                                margin-top: 2px;
+                            }
+
+                            #tl-pricing .tl-pricing-optional strong {
+                                color: var(--tl-accent);
+                            }
+
+                            /* ---- footnote ---- */
+                            #tl-pricing .tl-pricing-footnote {
+                                text-align: center;
+                                max-width: 640px;
+                                margin: 44px auto 0;
+                                font-size: 13px;
+                                color: var(--tl-muted);
+                                line-height: 1.6;
+                            }
+                        </style>
+
+                        <div class="tl-pricing-header">
+                            <span class="tl-pricing-eyebrow">Membership Plans</span>
+                            <h1>Learning built around how your family grows</h1>
+                            <p>From a single learner to multi-generational family groups, choose the membership that fits how you want to learn.</p>
+
+                            <div class="tl-pricing-toggle" role="group" aria-label="Billing period">
+                                <button type="button" class="tl-pricing-toggle-btn active" data-tl-cycle="monthly">Monthly</button>
+                                <button type="button" class="tl-pricing-toggle-btn" data-tl-cycle="annually">Annually <span class="tl-pricing-toggle-tag">Save ~16%</span></button>
+                            </div>
+                        </div>
+
+                        <div class="tl-pricing-grid">
+
+                            <!-- ===================== Individual ===================== -->
+                            <article class="tl-pricing-card" data-tl-plan="individual">
+                                <div class="tl-pricing-card-head">
+                                    <h2>Individual</h2>
+                                    <span class="tl-pricing-participants">1 Participant</span>
+                                    <p class="tl-pricing-desc">One learner with access to all of Tamarind Learning's courses.</p>
+                                </div>
+
+                                <div class="tl-pricing-price">
+                                    <span class="tl-pricing-amount" data-tl-monthly="$99" data-tl-annually="$1,000">$99</span>
+                                    <span class="tl-pricing-period" data-tl-monthly="/ month" data-tl-annually="/ year">/ month</span>
+                                </div>
+                                <span class="tl-pricing-save" data-tl-save-text="Save 16% vs. monthly billing">Save 16% vs. monthly billing</span>
+
+                                <a href="#" class="tl-pricing-cta">Get Started</a>
+
+                                <div class="tl-pricing-section">
+                                    <h3>What&rsquo;s Included</h3>
+                                    <ul class="tl-pricing-list">
+                                        <li><i class="fas fa-check"></i> Full access to Tamarind&rsquo;s courses</li>
+                                        <li><i class="fas fa-check"></i> Ongoing content updates and new releases</li>
+                                        <li><i class="fas fa-check"></i> Learn at your own pace, on your own schedule</li>
+                                    </ul>
+                                </div>
+
+                                <div class="tl-pricing-details-group">
+                                    <details class="tl-pricing-details">
+                                        <summary>How it&rsquo;s used</summary>
+                                        <ul class="tl-pricing-list">
+                                            <li><i class="fas fa-check"></i> Self-directed learning, go at your own pace</li>
+                                            <li><i class="fas fa-check"></i> Can be paired with conversations with a trusted advisor (family office professional, trustee, or advisor) to go deeper</li>
+                                            <li><i class="fas fa-check"></i> Structured learning paths for beneficiaries, trustees, and rising gen family members</li>
+                                        </ul>
+                                    </details>
+                                    <details class="tl-pricing-details">
+                                        <summary>Learning experience</summary>
+                                        <ul class="tl-pricing-list">
+                                            <li><i class="fas fa-check"></i> Interactive lessons, assessments, and applied exercises</li>
+                                            <li><i class="fas fa-check"></i> Personal workspace for notes and planning</li>
+                                            <li><i class="fas fa-check"></i> Supporting resources, including podcasts and webinars</li>
+                                            <li><i class="fas fa-check"></i> AI-supported guidance within the platform</li>
+                                        </ul>
+                                    </details>
+                                    <details class="tl-pricing-details">
+                                        <summary>Membership details</summary>
+                                        <ul class="tl-pricing-list">
+                                            <li><i class="fas fa-check"></i> One participant seat</li>
+                                            <li><i class="fas fa-check"></i> Monthly or annual subscription</li>
+                                            <li><i class="fas fa-check"></i> Cancel anytime</li>
+                                        </ul>
+                                    </details>
+                                </div>
+
+                                <div class="tl-pricing-optional">
+                                    <i class="fas fa-award"></i>
+                                    <span><strong>Optional:</strong> Earn the Accredited Beneficiary Stewardship (ABS) designation</span>
+                                </div>
+                            </article>
+
+                            <!-- ===================== Family ===================== -->
+                            <article class="tl-pricing-card tl-pricing-card-featured" data-tl-plan="family">
+                                <span class="tl-pricing-badge">Most Popular</span>
+                                <div class="tl-pricing-card-head">
+                                    <h2>Family</h2>
+                                    <span class="tl-pricing-participants">2&ndash;5 Participants</span>
+                                    <p class="tl-pricing-desc">Families and small groups with access to all of Tamarind Learning&rsquo;s courses.</p>
+                                </div>
+
+                                <div class="tl-pricing-price">
+                                    <span class="tl-pricing-amount" data-tl-monthly="$850" data-tl-annually="$8,500">$850</span>
+                                    <span class="tl-pricing-period" data-tl-monthly="/ month" data-tl-annually="/ year">/ month</span>
+                                </div>
+                                <span class="tl-pricing-save" data-tl-save-text="Save 17% vs. monthly billing">Save 17% vs. monthly billing</span>
+
+                                <a href="#" class="tl-pricing-cta">Get Started</a>
+
+                                <div class="tl-pricing-section">
+                                    <h3>What&rsquo;s Included</h3>
+                                    <ul class="tl-pricing-list">
+                                        <li><i class="fas fa-check"></i> All Individual Membership features</li>
+                                        <li><i class="fas fa-check"></i> Premium features for up to 5 participants</li>
+                                        <li><i class="fas fa-check"></i> Full access to Tamarind&rsquo;s complete curriculum</li>
+                                    </ul>
+                                </div>
+
+                                <div class="tl-pricing-details-group">
+                                    <details class="tl-pricing-details" open>
+                                        <summary>Features</summary>
+                                        <ul class="tl-pricing-list">
+                                            <li><i class="fas fa-check"></i> All members in one cohort</li>
+                                            <li><i class="fas fa-check"></i> Shared learning dashboard with group management tools</li>
+                                            <li><i class="fas fa-check"></i> Notesharing</li>
+                                            <li><i class="fas fa-check"></i> Discussion board</li>
+                                            <li><i class="fas fa-check"></i> Custom interest or knowledge assessment</li>
+                                            <li><i class="fas fa-check"></i> Custom onboarding event</li>
+                                            <li><i class="fas fa-check"></i> Administration support</li>
+                                        </ul>
+                                    </details>
+                                    <details class="tl-pricing-details">
+                                        <summary>How it&rsquo;s used</summary>
+                                        <ul class="tl-pricing-list">
+                                            <li><i class="fas fa-check"></i> Just-in-time learning for beneficiaries, trustees, family office employees, and rising-gen family members as needs arise</li>
+                                            <li><i class="fas fa-check"></i> Learning aligned to family meetings, transitions, and new responsibilities, providing shared context ahead of decisions</li>
+                                            <li><i class="fas fa-check"></i> Structured group learning pathways, such as a cousin group taking courses together and meeting periodically to discuss and apply what they&rsquo;re learning</li>
+                                        </ul>
+                                    </details>
+                                </div>
+                            </article>
+
+                            <!-- ===================== Groups ===================== -->
+                            <article class="tl-pricing-card" data-tl-plan="groups">
+                                <div class="tl-pricing-card-head">
+                                    <h2>Groups</h2>
+                                    <span class="tl-pricing-participants">6&ndash;10 Participants</span>
+                                    <p class="tl-pricing-desc">Larger families, family offices, and organizations that need education across one group.</p>
+                                </div>
+
+                                <div class="tl-pricing-price">
+                                    <span class="tl-pricing-amount" data-tl-monthly="$1,500" data-tl-annually="$15,000">$1,500</span>
+                                    <span class="tl-pricing-period" data-tl-monthly="/ month" data-tl-annually="/ year">/ month</span>
+                                </div>
+                                <span class="tl-pricing-save" data-tl-save-text="Save 17% vs. monthly billing">Save 17% vs. monthly billing</span>
+
+                                <a href="#" class="tl-pricing-cta">Get Started</a>
+
+                                <div class="tl-pricing-section">
+                                    <h3>What&rsquo;s Included</h3>
+                                    <ul class="tl-pricing-list">
+                                        <li><i class="fas fa-check"></i> All Family Membership features</li>
+                                        <li><i class="fas fa-check"></i> Premium features for up to 10 participants</li>
+                                        <li><i class="fas fa-check"></i> Full access to Tamarind&rsquo;s complete curriculum</li>
+                                        <li><i class="fas fa-check"></i> Members in 1+ cohorts</li>
+                                        <li><i class="fas fa-check"></i> Custom Learning Plan</li>
+                                        <li><i class="fas fa-check"></i> Cancel anytime</li>
+                                    </ul>
+                                </div>
+
+                                <div class="tl-pricing-details-group">
+                                    <details class="tl-pricing-details" open>
+                                        <summary>Built to scale</summary>
+                                        <ul class="tl-pricing-list">
+                                            <li><i class="fas fa-check"></i> Add additional participants at a low incremental cost</li>
+                                            <li><i class="fas fa-check"></i> No reconfiguration as the family or team grows</li>
+                                        </ul>
+                                    </details>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <p class="tl-pricing-footnote">Need more than 10 participants, or a custom plan for your family office? <a href="#">Contact us</a> to design a program tailored to your group.</p>
+
+                        <script>
+                            (function () {
+                                var root = document.getElementById('tl-pricing');
+                                if (!root) { return; }
+
+                                var toggleBtns = root.querySelectorAll('.tl-pricing-toggle-btn');
+                                var amounts = root.querySelectorAll('.tl-pricing-amount');
+                                var periods = root.querySelectorAll('.tl-pricing-period');
+                                var saveTags = root.querySelectorAll('.tl-pricing-save');
+
+                                function setCycle(cycle) {
+                                    toggleBtns.forEach(function (btn) {
+                                        btn.classList.toggle('active', btn.getAttribute('data-tl-cycle') === cycle);
+                                    });
+                                    amounts.forEach(function (el) {
+                                        var val = el.getAttribute(cycle === 'annually' ? 'data-tl-annually' : 'data-tl-monthly');
+                                        if (val) { el.textContent = val; }
+                                    });
+                                    periods.forEach(function (el) {
+                                        var val = el.getAttribute(cycle === 'annually' ? 'data-tl-annually' : 'data-tl-monthly');
+                                        if (val) { el.textContent = val; }
+                                    });
+                                    saveTags.forEach(function (el) {
+                                        el.classList.toggle('tl-pricing-save-visible', cycle === 'annually');
+                                    });
+                                }
+
+                                toggleBtns.forEach(function (btn) {
+                                    btn.addEventListener('click', function () {
+                                        setCycle(btn.getAttribute('data-tl-cycle'));
+                                    });
+                                });
+                            })();
+                        </script>
+                    </section>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-auto mb-4 mb-sm-0">
+                        <a href="#" rel="nofollow" class="logo"><img src="images/logo_white.svg" alt="logo" /></a>
+                    </div>
+                    <div class="col-sm-auto mb-4 mb-sm-0 d-flex justify-content-center align-items-center">
+
+                    </div>
+                    <div class="col-sm-auto mb-4 mb-sm-0">
+                    </div>
+                </div>
+                <div class="row footer-links-row">
+                    <div class="col-sm-3 mb-3">
+                        <div class="contact-info pr-sm-2 pr-md-3">
+                            4500 PGA Blvd., Suite 301A Palm Beach Gardens, FL 33418<br />
+                            <a href="tel:&#x2B;1 (561) 427-1330">+1 (561) 427-1330</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 mb-3">
+                        <ul class="links-wrap pr-sm-2 pr-md-3">
+                            <li>
+                                <a href="#">2022 Must Read Book List </a>
+                            </li>
+                            <li>
+                                <a href="#">The people who think AI might become conscious</a>
+                            </li>
+                            <li>
+                                <a href="#" rel="nofollow">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#" target=&quot;_blank&quot; rel="nofollow">Tamarind Partners</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="text-sm diclaimer-row">
+                    Disclaimer: The following education provides bespoke learning and education; however, it does not constitute legal, investment, estate planning, or tax advice, rather, the opinions and ideas expressed herein are those of Tamarind Learning, including outside experts and contributors. The content provided herein is for the sole use of the client learner for education and illustration purposes ONLY and is not intended to be comprehensive or utilized without consultation of the family's advisors and staff. For specific guidance pertaining to individual family members, advice should be sought from the family member's staff and outside key advisors.
+                </p>
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/jquery-appear/jquery.appear.js"></script>
+    <script src="plugins/jquery-confirm/jquery-confirm.min.js"></script>
+    <script src="plugins/63bits-pageBuilder/js/template63.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/splide/js/splide.min.js"></script>
+    <script src="plugins/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+</body>
+</html>
